@@ -77,13 +77,12 @@ export const authMiddlewareUpdate = async (
     //verificar se o token existe
     const { id } = jwt.verify(token, process.env.JWT_PASS ?? '') as JwtPayLoad
 
-    console.log("ok3")
+  
     const newUser = await userRepository.findBy({id});
 
     if (!newUser){
-        throw new UnauthorizedError('Comer o curtis')
+        throw new UnauthorizedError('Id Inexistente')
     }
-
 
     const { name, email} = req.body
     
@@ -91,8 +90,6 @@ export const authMiddlewareUpdate = async (
     newUser[0].email = email
     await userRepository.save(newUser)
     
-    console.log(newUser)
-
     req.body = newUser
 
    next()
