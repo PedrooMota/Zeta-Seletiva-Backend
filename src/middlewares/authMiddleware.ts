@@ -89,8 +89,7 @@ export const authMiddlewareUpdate = async (
     newUser[0].name = name
     newUser[0].email = email
     await userRepository.save(newUser)
-    
-    req.body = newUser
+    req.body = newUser[0]
 
    next()
    
