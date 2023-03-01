@@ -1,0 +1,37 @@
+version: "3.5"
+
+services:
+
+  node:
+      build: 
+        context: .
+      environment:
+        - NODE_ENV=production
+      volumes:
+        - ./:/usr/src/app
+        - /usr/src/app/node_modules
+      container_name: "node"
+      ports:
+        - 3000:3000
+      command: yarn run dev
+      depends_on: 
+        - postgres
+
+
+  postgres:
+    container_name: postgres-backend
+    image: postgres:14.2-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: login_jwt
+    ports:
+      - 5432:5432
+    volumes:
+      - ./salvar:/data/postgres.
+    
+  
+      
+
+   
