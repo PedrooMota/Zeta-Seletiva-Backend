@@ -51,13 +51,14 @@ A Zeta é uma empresa de Tecnologia e Inovação que desenvolve um sistema embar
 - [VsCode](https://code.visualstudio.com/) - IDE - Integrated Development Environment ou Editor de Código.
 - [Node](https://pt-br.reactjs.org/) - Software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web. A principal característica do Node.js é sua arquitetura assíncrona e orientada por eventos.
 - [TypeScript](https://www.typescriptlang.org/) - Linguagem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.
+- [Bcrypt]()
 - [Typeorm](https://typeorm.io/) -Técnica para aproximar o paradigma de desenvolvimento de aplicações orientadas a objetos ao paradigma do banco de dados relacional.
 - [Docker](https://www.docker.com/) -  Forma de virtualizar aplicações no conceito de “containers”, trazendo da web ou de seu repositório interno uma imagem completa, incluindo todas as dependências necessárias para executar sua aplicação.
 - [Insomnia](https://insomnia.rest/download) - Framework Open Source para desenvolvimento/teste de API Clients.
 
 <a href="https://www.java.com" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="typescript" width="60" height="60"/> </a> <a href="https://developer.android.com/studio" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="androidStudio" width="50" height="50"/></a> <a target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="firebase" width="50" height="50"/></a> <a target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="firebase" width="50" height="50"/> </a>
 
-### **Eu utilizei o terminal do Vscode para executar as instalações, mas você pode utilizar o próprio terminal do Windows.** <br> Para acessar o terminal, use: Windows + R e apertar no "Ok" ou pressionar ENTER.
+### **Eu utilizei o terminal do Vscode para executar as instalações, mas você pode utilizar o próprio terminal do Windows.** <br><br> Para acessar o terminal, use: Windows + R e apertar no "Ok" ou pressionar ENTER.
 
 ###
 
@@ -72,53 +73,76 @@ A Zeta é uma empresa de Tecnologia e Inovação que desenvolve um sistema embar
 ### Abra o Docker Desktop e o mantenha ligado.
 ### Com o terminal aberto, siga os próximos passos:
 
-#### Crie uma pasta chamada para alocarmos nosso projeto:
+#### Crie uma pasta para alocarmos nosso projeto 
+O nome vai da sua preferência. Neste caso, estamos criando uma pasta chamada "myapp".
 
 ```sh
 mkdir myapp
 ```
 <hr>
 
-#### Em seguida, iremos entrar na pasta para podermos executar nossos comandos:
+#### Em seguida, iremos entrar na pasta para podermos executar nossos comandos.
 
 ```sh
 cd myapp
 ```
-### [danger] Não é necessário utilizar o Vscode, mas caso queira continuar o passo a passo por ele, utilize:
+
+### Não é necessário utilizar o Vscode! 
+Caso queira continuar o passo a passo dentro do Vscode, utilize este comando para abrirmos o Vscode conectado a pasta criada (NÃO É OBRIGATÓRIO)
+
 ```sh
+
 code .
+
 ```
 <hr>
 
-#### Clone este repositório na sua pasta:
+### Clone este repositório na sua pasta
+#### Ao utilizarmos este comando, o repositório inteiro vai para a sua pasta criada.
 
 ```sh
-git clone https://github.com/PedrooMota/Zeta-Seletiva-Backend
+
+git clone https://github.com/PedrooMota/Zeta-Seletiva-
+
 ```
 <hr>
 
-#### Depois de clonado, acesse a pasta que foi criada:
+#### Depois de clonado, acesse a pasta que foi criada para podermos realizar as instalações.
 
 ```sh
+
 cd Zeta-Seletiva-Backend
+
 ```
 
-#### Depois de clonado, você deverá executar o comando do **docker-compose** para instalarmos todas as dependências e criarmos as images e containers:
+#### Agora, você deverá executar o comando do **docker-compose** para instalarmos todas as dependências e criarmos as Images e Containers.
+Não se esqueça de estar com o Docker Desktop aberto ( caso contrário, o comando irá dar erro )
 
 ```sh
+
 docker-compose up -d
+
 ```
-#### Agora ao verificar o seu Docker, você se depará as Images e os Containers.
+
+#### Depois de executado, você pode verificar o seu docker pois os Containers e as Images foram instaladas. 
 <hr>
 
-#### Este repositório possui uma pasta chamada **migrations**, onde possui dados salvos para a criação do banco (gerado pelo **typeorm**). Você deverá acessar o container **node** para executar o **migration:run** (ele vai criar a tabela utilizada conforme o Typeorm criou). Execute nesta ordem:
+## TypeORM
+
+#### Com a utilização do TypeORM, conseguimos manipular objetos de Banco de Dados (DML, DDL), sem necessidade de termos que utilizar a estrutura padrão de linguagem SQL
 
 ```sh
+
 docker exec -ti node sh
+
 ```
+
 ```sh
+
 npm run migration:run
+
 ```
+
 ### Depois de executado, use o <b>CTRL + D</b> para sair do "container" e retornar a sua pasta.
 <hr>
 
@@ -149,7 +173,7 @@ npm run migration:run
     - http://localhost:3000/user/< id do Usuário > : faz a exclusão (obrigátorio o envio do bearer token de autenticação no header)
 
 - Como colocar o Bearer Token:
-  - Vá na aba "Headers" nas rotas put e delete vai possuir um campo chamado "Authorization" e do lado está o seu token, quando criar um novo token você vai apagar tudo que vem depois da palavra "Bearer" e colocar o token
+  - Vá na aba "Headers" nas rotas PUT e DEL vai possuir um campo chamado "Authorization" e do lado está o seu token, quando criar um novo token você vai apagar tudo que vem depois da palavra "Bearer" e colocar o token
   
 ## :white_check_mark: A API está pronta para ser usada!
 
