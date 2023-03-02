@@ -129,7 +129,7 @@ docker-compose up -d
 
 ## TypeORM
 
-#### Com a utilização do TypeORM, conseguimos manipular objetos de Banco de Dados (DML, DDL), sem necessidade de termos que utilizar a estrutura padrão de linguagem SQL
+#### Com a utilização do TypeORM, conseguimos manipular objetos de Banco de Dados (DML, DDL), sem necessidade de termos que utilizar a estrutura padrão de linguagem SQL. No repositório, existe uma pasta chamada "migrations" onde está alocado toda a estrutura criada para esta aplicação. Ao executar os comandos na ordem abaixo, você entrará no Container "node" e vai rodar a migration já criada, inserindo no Banco de dados a estrutura que estava criada.
 
 ```sh
 
@@ -143,10 +143,12 @@ npm run migration:run
 
 ```
 
-### Depois de executado, use o <b>CTRL + D</b> para sair do "container" e retornar a sua pasta.
+### Depois de executado, use o <b>CTRL + D</b> para sair do "Container" e retornar a sua pasta.
+Pronto, o projeto já está na sua máquina e pronto para funcionar!
 <hr>
 
 # Usando o insomnia
+Utilizaremos agora o Insomnia para realizarmos os testes da API.
 
 - Abra o insomnia
   - [x] Clique em **Create** no canto superior direito
