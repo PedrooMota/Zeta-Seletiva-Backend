@@ -69,6 +69,12 @@ git clone https://github.com/PedrooMota/Zeta-Seletiva-Backend
 ```
 <hr>
 
+#### Depois de clonado, acesse a pasta que foi criada:
+
+```sh
+cd Zeta-Seletiva-Backend
+```
+
 #### Depois de clonado, você deverá executar o comando do **docker-compose** para instalarmos todas as dependências e criarmos as images e containers:
 
 ```sh
@@ -85,6 +91,7 @@ docker exec -ti node sh
 ```sh
 npm run migration:run
 ```
+### Depois de executado, use o <b>CTRL + D</b> para sair do "container" e retornar a sua pasta.
 <hr>
 
 
