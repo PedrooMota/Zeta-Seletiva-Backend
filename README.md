@@ -154,7 +154,7 @@ Utilizaremos agora o Insomnia para realizarmos os testes da API.
   - [x] Clique na opção **Design Document**
   - [x] Coloque o nome de sua preferência e confirma
   - [x] Clique na opção **Debug** no meio superior da tela
-  - [x] Clique na **setinha** do lado do nome e do lado de **Design**
+  - [x] Clique na **setinha** entre o nome e o **Design**
   - [x] Vá ate **import/export**
   - [x] Selecione **import data** e clique em **from file**
   - [x] Escolha o arquivo .har que está na pasta do repositório
@@ -174,7 +174,7 @@ Utilizaremos agora o Insomnia para realizarmos os testes da API.
     - http://localhost:3000/user/< id do Usuário > : faz a exclusão (obrigátorio o envio do bearer token de autenticação no header)
 
 - Como colocar o Bearer Token:
-  - Vá na aba "Headers" nas rotas PUT e DEL vai possuir um campo chamado "Authorization" e do lado está o seu token, quando criar um novo token você vai apagar tudo que vem depois da palavra "Bearer" e colocar o token
+  - Vá na aba do lado direito de Multipart e procure o "Bearer token". Nas rotas PUT e DEL você vai inserir o seu token no campo "Token" para ser validado a rota. O token do usuário será gerado quando ele realizar o Login ( sempre bom guardar o token ).
   
 ## :white_check_mark: A API está pronta para ser usada!
 
