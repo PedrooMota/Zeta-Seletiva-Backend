@@ -49,28 +49,46 @@ A Zeta é uma empresa de Tecnologia e Inovação que desenvolve um sistema embar
 ## Ferramentas utilizadas
 
 - [VsCode](https://code.visualstudio.com/) - IDE - Integrated Development Environment ou Editor de Código.
-- [Node](https://pt-br.reactjs.org/) - Biblioteca utilizada para a criação da interface e suas propriedades.
-- [TypeScript](https://www.typescriptlang.org/) - Uma linguagem de código aberta que foi utilizada e suas propriedades.
+- [Node](https://pt-br.reactjs.org/) - Software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web. A principal característica do Node.js é sua arquitetura assíncrona e orientada por eventos.
+- [TypeScript](https://www.typescriptlang.org/) - Linguagem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.
 - [Typeorm](https://typeorm.io/) -Técnica para aproximar o paradigma de desenvolvimento de aplicações orientadas a objetos ao paradigma do banco de dados relacional.
 - [Docker](https://www.docker.com/) -  Forma de virtualizar aplicações no conceito de “containers”, trazendo da web ou de seu repositório interno uma imagem completa, incluindo todas as dependências necessárias para executar sua aplicação.
 - [Insomnia](https://insomnia.rest/download) - Framework Open Source para desenvolvimento/teste de API Clients.
 
 <a href="https://www.java.com" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="typescript" width="60" height="60"/> </a> <a href="https://developer.android.com/studio" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="androidStudio" width="50" height="50"/></a> <a target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="firebase" width="50" height="50"/></a> <a target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="firebase" width="50" height="50"/> </a>
 
+### **Eu utilizei o terminal do Vscode para executar as instalações, mas você pode utilizar o próprio terminal do Windows.** <br> Para acessar o terminal, use: Windows + R e apertar no "Ok" ou pressionar ENTER.
 
 ###
 
 # Passo a Passo para instalar e utilizar o repositório
 
-#### **Instale a ferramenta Vscode** <br> **<a target="_blank" href="https://code.visualstudio.com/">Vscode</a>**
 #### **Instale o Node para executarmos o NPM** <br> **<a target="_blank" href="https://opensource.com/article/20/1/react-javascript-frameworks">Node</a>** 
 #### **Instale o Docker para conseguir utilizar o projeto na máquina.** <br> **<a target="_blank" href="https://www.docker.com/">Docker</a>**
 #### **Instale o Insomnia para conseguir realizar os testes da API.** <br> **<a target="_blank" href="https://insomnia.rest/download">Insomnia</a>**
 
 ##
 
-#### Abra o Docker Desktop e o mantenha ligado.
-#### Com o Vscode aberto, crie um terminal.
+### Abra o Docker Desktop e o mantenha ligado.
+### Com o terminal aberto, siga os próximos passos:
+
+#### Crie uma pasta chamada para alocarmos nosso projeto:
+
+```sh
+mkdir myapp
+```
+<hr>
+
+#### Em seguida, iremos entrar na pasta para podermos executar nossos comandos:
+
+```sh
+cd myapp
+```
+### [danger] Não é necessário utilizar o Vscode, mas caso queira continuar o passo a passo por ele, utilize:
+```sh
+code .
+```
+<hr>
 
 #### Clone este repositório na sua pasta:
 
