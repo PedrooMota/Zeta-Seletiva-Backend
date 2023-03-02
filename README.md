@@ -26,7 +26,7 @@ Foi desenvolvido uma aolicação hospedada em um servidor responsável em execut
 A Zeta é uma empresa de Tecnologia e Inovação que desenvolve um sistema embarcado inteligente e inovador, para gestão de operação e manutenção preventiva e preditiva de compressores de ar que funcionará com integração e serviços em nuvem e inteligência artificial.
 
 <h1 align="center">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="https://user-images.githubusercontent.com/15229355/58760902-6cb86080-853e-11e9-91e2-afb66f77e8cb.png" />
+  <img src="https://user-images.githubusercontent.com/15229355/58760902-6cb86080-853e-11e9-91e2-afb66f77e8cb.png" />
 </h1>
 
 
