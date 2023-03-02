@@ -57,7 +57,7 @@ A Zeta é uma empresa de Tecnologia e Inovação que desenvolve um sistema embar
 
 # Passo a Passo
 
-#### **Instale a ferramenta Vscode, o Node para executarmos o NPM e o Docker para conseguir utilizar o projeto na máquina.**  <br>**<a target="_blank" href="https://code.visualstudio.com/">Vscode</a>**  **<a target="_blank" href="https://opensource.com/article/20/1/react-javascript-frameworks">Node</a>** **<a target="_blank" href="https://www.docker.com/">Docker</a>**
+#### **Instale a ferramenta Vscode, o Node para executarmos o NPM e o Docker para conseguirmos utilizar o projeto na máquina.**  <br>**<a target="_blank" href="https://code.visualstudio.com/">Vscode</a>**  **<a target="_blank" href="https://opensource.com/article/20/1/react-javascript-frameworks">Node</a>** **<a target="_blank" href="https://www.docker.com/">Docker</a>**
 
 #### Abra o Docker Desktop e o mantenha ligado.
 #### Com o Vscode aberto, crie um terminal.
