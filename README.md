@@ -13,7 +13,7 @@
 
 - [Usando o Insomnia](#usando-o-insomnia)
 
--[Rotas para uso da API](#rotas-para-uso-da-api)
+- [Rotas para uso da API](#rotas-para-uso-da-api)
 
 
 <p align="center">
