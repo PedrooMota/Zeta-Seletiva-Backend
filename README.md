@@ -10,15 +10,9 @@
 
 - [Funcionalidades](#funcionalidades)
 
-- [Aplicação](#aplicação)
-
 - [Ferramentas utilizadas](#ferramentas-utilizadas)
 
-- [Acesso ao projeto](#acesso-ao-projeto)
-
-- [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)
-
-
+- [Passo a Passo](#passo-a-passo)
 
 
 <p align="center">
@@ -50,38 +44,26 @@ A Zeta é uma empresa de Tecnologia e Inovação que desenvolve um sistema embar
 
 ###
 
-## Aplicação
-
-<div align="center">
-
-
-
-  </div>
-
-###
-
 ## Ferramentas utilizadas
 
+- [VsCode](https://code.visualstudio.com/) - Ferramenta utilizada para a aplicação.
+- [Node](https://pt-br.reactjs.org/) - Biblioteca utilizada para a criação da interface e suas propriedades.
+- [TypeScript](https://www.typescriptlang.org/) - Uma linguagem de código aberta que foi utilizada e suas propriedades.
+- [Typeorm](https://typeorm.io/) -Técnica para aproximar o paradigma de desenvolvimento de aplicações orientadas a objetos ao paradigma do banco de dados relacional.
+- [Docker](https://typeorm.io/) 
 
-<a href="https://www.java.com" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="typescript" width="60" height="60"/> </a> 
-<a href="https://developer.android.com/studio" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="androidStudio" width="50" height="50"/></a> 
-<a  target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="firebase" width="50" height="50"/> </a>
-
-###
-
-## Acesso ao projeto
-Você irá precisar clonar este repositório para a sua máquina.
-
-**A partir deste link você poderá clonar este repositório:**
+<a href="https://www.java.com" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="typescript" width="60" height="60"/> </a> <br>
+<a href="https://developer.android.com/studio" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="androidStudio" width="50" height="50"/></a> <br>
+<a  target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="firebase" width="50" height="50"/> </a>
 
 ###
 
 # Passo a Passo
 
-#### **Instale a ferramenta Vscode e o Node para executarmos o NPM**  <br>**<a target="_blank" href="https://code.visualstudio.com/">Vscode</a>  <a target="_blank" href="https://opensource.com/article/20/1/react-javascript-frameworks">Node</a>**
+#### **Instale a ferramenta Vscode, o Node para executarmos o NPM e o Docker para conseguir utilizar o projeto na máquina.**  <br>**<a target="_blank" href="https://code.visualstudio.com/">Vscode</a>**  **<a target="_blank" href="https://opensource.com/article/20/1/react-javascript-frameworks">Node</a>** **<a target="_blank" href="https://www.docker.com/">Docker</a>**
 
-
-#### Com o Vscode aberto, crie um terminal do Vscode.
+#### Abra o Docker Desktop e o mantenha ligado.
+#### Com o Vscode aberto, crie um terminal.
 
 #### Clone este repositório na sua pasta:
 
@@ -95,6 +77,7 @@ git clone https://github.com/PedrooMota/Zeta-Seletiva-Backend
 ```sh
 docker-compose up -d
 ```
+#### Agora você pode verificar o seu Docker, onde vai ter criado as Images e os Containers.
 <hr>
 
 #### Este repositório possui uma pasta chamada **migrations**, onde possui dados salvos para a criação do banco (gerado pelo **typeorm**). Você deverá acessar o container **node** para executar o **migration:run** (ele vai criar a tabela utilizada conforme o Typeorm criou). Execute nesta ordem:
