@@ -1,7 +1,7 @@
 <h1 align="center"> Zeta Tecnologia e Inovação </h1>
 <h3 align="center"> Projeto designado para o desafio Front-End do processeo da Zeta. </h3>
 
-## Tópicos 
+# Sumário
 
 - [Descrição do projeto](#descrição-do-projeto)
 
@@ -10,6 +10,8 @@
 - [Ferramentas utilizadas](#ferramentas-utilizadas)
 
 - [Passo a Passo](#passo-a-passo-para-instalar-e-utilizar-o-repositório)
+
+- [Usando o Insomnia](#usando-o-insomnia)
 
 
 <p align="center">
@@ -20,9 +22,10 @@
 Foi desenvolvido um servidor responsável em possuir a lógica de negócios e por cadastrar usuários no banco de dados, assegurando as devidas restrições de acesso, segurança e performance da aplicação, utilizando API REST e Login JWT.
 
 A Zeta é uma empresa de Tecnologia e Inovação que desenvolve um sistema embarcado inteligente e inovador, para gestão de operação e manutenção preventiva e preditiva de compressores de ar que funcionará com integração e serviços em nuvem e inteligência artificial.
-<p align="center">
-<img src="https://user-images.githubusercontent.com/83295376/221979524-fa4ca3a5-069b-4fc2-89d9-698d9c04a015.png"/>
-</p>
+
+<h1 align="center">
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="https://user-images.githubusercontent.com/15229355/58760902-6cb86080-853e-11e9-91e2-afb66f77e8cb.png" />
+</h1>
 
 
 # Funcionalidades
@@ -50,15 +53,19 @@ A Zeta é uma empresa de Tecnologia e Inovação que desenvolve um sistema embar
 - [Docker](https://www.docker.com/) -  Forma de virtualizar aplicações no conceito de “containers”, trazendo da web ou de seu repositório interno uma imagem completa, incluindo todas as dependências necessárias para executar sua aplicação.
 - [Insomnia](https://insomnia.rest/download) - Framework Open Source para desenvolvimento/teste de API Clients.
 
-<a href="https://www.java.com" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="typescript" width="60" height="60"/> </a> <br>
-<a href="https://developer.android.com/studio" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="androidStudio" width="50" height="50"/></a> <br>
-<a  target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="firebase" width="50" height="50"/> </a>
+<a href="https://www.java.com" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="typescript" width="60" height="60"/> </a> <a href="https://developer.android.com/studio" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="androidStudio" width="50" height="50"/></a> <a target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="firebase" width="50" height="50"/></a> <a target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="firebase" width="50" height="50"/> </a>
+
 
 ###
 
 # Passo a Passo para instalar e utilizar o repositório
 
-#### **Instale a ferramenta Vscode, o Node para executarmos o NPM e o Docker para conseguirmos utilizar o projeto na máquina.**  <br>**<a target="_blank" href="https://code.visualstudio.com/">Vscode</a>**  **<a target="_blank" href="https://opensource.com/article/20/1/react-javascript-frameworks">Node</a>** **<a target="_blank" href="https://www.docker.com/">Docker</a>**
+#### **Instale a ferramenta Vscode** <br> **<a target="_blank" href="https://code.visualstudio.com/">Vscode</a>**
+#### **Instale o Node para executarmos o NPM** <br> **<a target="_blank" href="https://opensource.com/article/20/1/react-javascript-frameworks">Node</a>** 
+#### **Instale o Docker para conseguir utilizar o projeto na máquina.** <br> **<a target="_blank" href="https://www.docker.com/">Docker</a>**
+#### **Instale o Insomnia para conseguir realizar os testes da API.** <br> **<a target="_blank" href="https://insomnia.rest/download">Insomnia</a>**
+
+##
 
 #### Abra o Docker Desktop e o mantenha ligado.
 #### Com o Vscode aberto, crie um terminal.
@@ -81,7 +88,7 @@ cd Zeta-Seletiva-Backend
 ```sh
 docker-compose up -d
 ```
-#### Agora você pode verificar o seu Docker, onde vai ter criado as Images e os Containers.
+#### Agora ao verificar o seu Docker, você se depará as Images e os Containers.
 <hr>
 
 #### Este repositório possui uma pasta chamada **migrations**, onde possui dados salvos para a criação do banco (gerado pelo **typeorm**). Você deverá acessar o container **node** para executar o **migration:run** (ele vai criar a tabela utilizada conforme o Typeorm criou). Execute nesta ordem:
@@ -108,7 +115,34 @@ npm run migration:run
   - [x] Escolha o arquivo .har que está na pasta do repositório
   - [x] Clique em "Ok", pronto você importou tudo que e preciso para fazer as requisições para a API
 
+## Rotas para uso da API
+
+- Na API desenvolvida foram utilizados os seguintes métodos HTTP:
+  - `GET`
+    -  http://localhost:3000/profile - exibe todos os usuários cadastrados
+  - `POST`
+    - http://localhost:3000/user - realiza o cadastro do usuário (obrigátorio o envio de um JSON no body com as informações: `nome`, `email` e `senha`
+    - http://localhost:3000/login - Realiza o login e faz a criação do token para utilizar nas rotas de `update` e `delete` (obrigátorio o envio de um JSON no body com o `email` e a `senha` do usuário)
+  - `PUT`
+    - http://localhost:3000/user/< id do Usuário > - realiza a alteração do usuário (obrigátorio o envio de um JSON no body com os campo que deseja alterar e o bearer token de autenticação no header)
+  - `DEL`
+    - http://localhost:3000/user/< id do Usuário > : faz a exclusão (obrigátorio o envio do bearer token de autenticação no header)
+
+- Como colocar o Bearer Token:
+  - Vá na aba "Headers" nas rotas put e delete vai possuir um campo chamado "Authorization" e do lado está o seu token, quando criar um novo token você vai apagar tudo que vem depois da palavra "Bearer" e colocar o token
+  
+## :white_check_mark: A API está pronta para ser usada!
+
+# Autor
+
+| [<img src="https://user-images.githubusercontent.com/83295376/222512397-67011e82-9133-4b39-bb09-dccd5d394baf.png" width=115><br><sub>Pedro Henrique Mota</sub>](https://github.com/camilafernanda) | 
+| :---: | 
 
 
-Depois de rodar o projeto, basta abrir a ferramenta <a href="">Insomnia</a> para realizar os testes.
+
+<hr>
+
+<h1 align="center">
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="" />
+</h1>
 
