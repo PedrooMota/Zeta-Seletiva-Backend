@@ -76,9 +76,37 @@ Você irá precisar clonar este repositório para a sua máquina.
 
 ###
 
-## Abrir e rodar o projeto
+# Passo a Passo
 
-**Primeiramente, você deverá clonar o repositório para a sua máquina:** <button type="submit" href="https://github.com/PedrooMota/Zeta-Estagio.git">Aperte aqui</button>
+#### **Instale a ferramenta Vscode e o Node para executarmos o NPM**  <br>**<a target="_blank" href="https://code.visualstudio.com/">Vscode</a>  <a target="_blank" href="https://opensource.com/article/20/1/react-javascript-frameworks">Node</a>**
 
-###
+
+#### Com o Vscode aberto, crie um terminal do Vscode.
+
+#### Clone este repositório na sua pasta:
+
+```sh
+git clone https://github.com/PedrooMota/Zeta-Seletiva-Backend
+```
+<hr>
+
+#### Depois de clonado, você deverá executar o comando do **docker-compose** para instalarmos todas as dependências e criarmos as images e containers:
+
+```sh
+docker-compose up -d
+```
+<hr>
+
+#### Este repositório possui uma pasta chamada **migrations**, onde possui dados salvos para a criação do banco (gerado pelo **typeorm**). Você deverá acessar o container **node** para executar o **migration:run** (ele vai criar a tabela utilizada conforme o Typeorm criou). Execute nesta ordem:
+
+```sh
+docker exec -ti node sh
+```
+```sh
+npm run migration:run
+```
+<hr>
+
+
+Depois de rodar o projeto, basta abrir a ferramenta <a href="">Insomnia</a> para realizar os testes.
 
