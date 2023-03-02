@@ -13,6 +13,8 @@
 
 - [Usando o Insomnia](#usando-o-insomnia)
 
+-[Rotas para uso da API](#rotas-para-uso-da-api)
+
 
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=PROJETO%20FINALIZADO&color=GREEN&style=for-the-badge"/>
