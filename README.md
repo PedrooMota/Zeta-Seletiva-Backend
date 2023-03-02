@@ -138,11 +138,7 @@ npm run migration:run
 | [<img src="https://user-images.githubusercontent.com/83295376/222512397-67011e82-9133-4b39-bb09-dccd5d394baf.png" width=115><br><sub>Pedro Henrique Mota</sub>](https://github.com/camilafernanda) | 
 | :---: | 
 
-
-
 <hr>
 
-<h1 align="center">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="" />
-</h1>
+
 
