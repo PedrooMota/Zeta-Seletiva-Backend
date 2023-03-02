@@ -51,7 +51,6 @@ A Zeta é uma empresa de Tecnologia e Inovação que desenvolve um sistema embar
 - [VsCode](https://code.visualstudio.com/) - IDE - Integrated Development Environment ou Editor de Código.
 - [Node](https://pt-br.reactjs.org/) - Software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web. A principal característica do Node.js é sua arquitetura assíncrona e orientada por eventos.
 - [TypeScript](https://www.typescriptlang.org/) - Linguagem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.
-- [Bcrypt]()
 - [Typeorm](https://typeorm.io/) -Técnica para aproximar o paradigma de desenvolvimento de aplicações orientadas a objetos ao paradigma do banco de dados relacional.
 - [Docker](https://www.docker.com/) -  Forma de virtualizar aplicações no conceito de “containers”, trazendo da web ou de seu repositório interno uma imagem completa, incluindo todas as dependências necessárias para executar sua aplicação.
 - [Insomnia](https://insomnia.rest/download) - Framework Open Source para desenvolvimento/teste de API Clients.
