@@ -1,5 +1,5 @@
 <h1 align="center"> Zeta Tecnologia e Inovação </h1>
-<h3 align="center"> Projeto designado para o desafio Front-End do processeo da Zeta. </h3>
+<h3 align="center"> Projeto designado para o desafio Back-End do processeo da Zeta. </h3>
 
 # Sumário
 
