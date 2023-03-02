@@ -180,7 +180,7 @@ Utilizaremos agora o Insomnia para realizarmos os testes da API.
 
 # Autor
 
-| [<img src="https://user-images.githubusercontent.com/83295376/222512397-67011e82-9133-4b39-bb09-dccd5d394baf.png" width=115><br><sub>Pedro Henrique Mota</sub>](https://www.linkedin.com/in/pedro-mota-294521232/) | 
+| [<img src="https://user-images.githubusercontent.com/83295376/222590779-a5a2a44d-049a-4e81-9aec-709a5e7e8459.png" width=115><br><sub>Pedro Henrique Mota</sub>](https://www.linkedin.com/in/pedro-mota-294521232/) | 
 | :---: | 
 
 <hr>
