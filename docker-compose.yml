@@ -1,4 +1,4 @@
-version: "3.5"
+version: "4"
 
 services:
 
@@ -16,7 +16,6 @@ services:
       command: yarn run dev
       depends_on: 
         - postgres
-
 
   postgres:
     container_name: postgres-backend
