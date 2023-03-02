@@ -21,7 +21,7 @@
 </p>
 
 # Descrição do Projeto
-Foi desenvolvido um servidor responsável em possuir a lógica de negócios e por cadastrar usuários no banco de dados, assegurando as devidas restrições de acesso, segurança e performance da aplicação, utilizando API REST e Login JWT.
+Foi desenvolvido uma aolicação hospedada em um servidor responsável em executar a lógica de negócios e por cadastrar usuários no banco de dados, assegurando as devidas restrições de acesso, segurança e performance da aplicação, utilizando API REST e Login JWT.
 
 A Zeta é uma empresa de Tecnologia e Inovação que desenvolve um sistema embarcado inteligente e inovador, para gestão de operação e manutenção preventiva e preditiva de compressores de ar que funcionará com integração e serviços em nuvem e inteligência artificial.
 
@@ -36,9 +36,9 @@ A Zeta é uma empresa de Tecnologia e Inovação que desenvolve um sistema embar
 
 :heavy_check_mark: `Funcionalidade 2:` Realizar o login e automaticamente receber um token.
 
-:heavy_check_mark: `Funcionalidade 3:` Poder deletar o cadastro a partir de um token.
+:heavy_check_mark: `Funcionalidade 3:` Poder deletar o cadastro de forma autenticada.
 
-:heavy_check_mark: `Funcionalidade 4:` Poder alterar os dados cadastrados com um token.
+:heavy_check_mark: `Funcionalidade 4:` Poder alterar os dados cadastrados de forma autenticada.
 
 :heavy_check_mark: `Funcionalidade 5:` Poder listar todos os cadastros.
 
@@ -48,7 +48,7 @@ A Zeta é uma empresa de Tecnologia e Inovação que desenvolve um sistema embar
 
 ## Ferramentas utilizadas
 
-- [VsCode](https://code.visualstudio.com/) - Ferramenta utilizada para a aplicação.
+- [VsCode](https://code.visualstudio.com/) - IDE - Integrated Development Environment ou Editor de Código.
 - [Node](https://pt-br.reactjs.org/) - Biblioteca utilizada para a criação da interface e suas propriedades.
 - [TypeScript](https://www.typescriptlang.org/) - Uma linguagem de código aberta que foi utilizada e suas propriedades.
 - [Typeorm](https://typeorm.io/) -Técnica para aproximar o paradigma de desenvolvimento de aplicações orientadas a objetos ao paradigma do banco de dados relacional.
