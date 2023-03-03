@@ -21,7 +21,7 @@
 </p>
 
 # Descrição do Projeto
-Foi desenvolvido uma aolicação hospedada em um servidor responsável em executar a lógica de negócios e por cadastrar usuários no banco de dados, assegurando as devidas restrições de acesso, segurança e performance da aplicação, utilizando API REST e Login JWT.
+Foi desenvolvido uma aplicação hospedada em um servidor responsável em executar a lógica de negócios e por cadastrar usuários no banco de dados, assegurando as devidas restrições de acesso, segurança e performance da aplicação, utilizando API REST e Login JWT.
 
 A Zeta é uma empresa de Tecnologia e Inovação que desenvolve um sistema embarcado inteligente e inovador, para gestão de operação e manutenção preventiva e preditiva de compressores de ar que funcionará com integração e serviços em nuvem e inteligência artificial.
 
