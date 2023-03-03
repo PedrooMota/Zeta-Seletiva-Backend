@@ -159,7 +159,42 @@ Utilizaremos agora o Insomnia para realizarmos os testes da API.
   - [x] Selecione **import data** e clique em **from file**
   - [x] Escolha o arquivo .har que está na pasta do repositório
   - [x] Clique em "Ok", pronto você importou tudo que e preciso para fazer as requisições para a API
+  
+## As respectivas Rotas dentro do Insomnia
+  - `POST`
+  
+   <p align="center">
+      <img src="https://user-images.githubusercontent.com/83295376/222599939-fbf5f357-2513-4413-b0dc-28230117b5a4.png"/>
+   </p><br>
+   
+  - `POST`
+  
+   <p align="center">
+      <img src="https://user-images.githubusercontent.com/83295376/222600374-72f6652a-3176-434b-a973-ca7d305b17ff.png"/>
+   </p>
+   
+   - `GET`
+  
+   <p align="center">
+      <img src="https://user-images.githubusercontent.com/83295376/222600748-94cae9f0-5e34-43d5-af3b-abb6aba96073.png"/>
+   </p>
+  
 
+   
+   - `PUT`
+  
+   <p align="center">
+      <img src="https://user-images.githubusercontent.com/83295376/222601219-315ea204-7111-4b95-b57c-7ebf47bdba7d.png"/>
+   </p>
+   
+   - `DEL`
+  
+   <p align="center">
+      <img src="https://user-images.githubusercontent.com/83295376/222601340-ae4073a1-f9a6-444a-847f-0f195c5aae93.png"/>
+   </p>
+   
+ ##
+   
 ## Rotas para uso da API
 
 - Na API desenvolvida foram utilizados os seguintes métodos HTTP:
